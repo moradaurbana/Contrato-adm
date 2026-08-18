@@ -1,0 +1,8 @@
+{
+  "name": "Gerador de Contrato",
+  "description": "App para gerar contratos de administração de imóveis em PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
