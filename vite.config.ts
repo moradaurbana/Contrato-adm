@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: './', // Corrige o caminho dos arquivos no GitHub Pages
+    base: '/Contrato-adm/', // Caminho base exato do repositório no GitHub Pages
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
