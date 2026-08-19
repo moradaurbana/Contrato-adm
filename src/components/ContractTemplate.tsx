@@ -1,7 +1,6 @@
 import React from 'react';
 import { ContractData } from '../types';
-import logo from '../assets/logo_horizontal_color_transparent.png';
-import bgImage from '../assets/images/cover_bg_buildings_1787066453564.jpg';
+import { logoBase64, bgImageBase64 } from '../assets/base64Images';
 
 interface Props {
   data: ContractData;
@@ -21,12 +20,12 @@ export const ContractTemplate: React.FC<Props> = ({ data }) => {
       
       {/* COVER PAGE */}
       <div className="relative w-full min-h-[1131px] bg-gray-900 shadow-xl print:shadow-none print:break-after-page flex flex-col font-sans overflow-hidden">
-        <img src={bgImage} className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Background" />
+        <img src={bgImageBase64} className="absolute inset-0 w-full h-full object-cover opacity-30" alt="Background" />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/50 to-gray-900/20" />
         
         <div className="relative z-10 flex-1 flex flex-col p-16">
           <div className="bg-white rounded-xl p-4 inline-flex self-start shadow-xl">
-            <img src={logo} alt="Morada Urbana" className="h-10 object-contain" />
+            <img src={logoBase64} alt="Morada Urbana" className="h-10 object-contain" />
           </div>
 
           <div className="mt-auto mb-24 max-w-lg">
@@ -53,7 +52,7 @@ export const ContractTemplate: React.FC<Props> = ({ data }) => {
         
         {/* HEADER */}
       <div className="flex justify-end items-start mb-8">
-        <img src={logo} alt="Morada Urbana" className="h-12 object-contain" />
+        <img src={logoBase64} alt="Morada Urbana" className="h-12 object-contain" />
       </div>
 
       <h1 className="text-center text-sm font-bold text-[#0f172a] uppercase tracking-widest mb-10 border-b border-[#e2e8f0] pb-4">

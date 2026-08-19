@@ -1,8 +1,7 @@
 import React from 'react';
 import { Document, Page, Text, View, StyleSheet, Font, Image } from '@react-pdf/renderer';
 import { ContractData } from '../types';
-import logo from '../assets/logo_horizontal_color_transparent.png';
-import bgImage from '../assets/images/cover_bg_buildings_1787066453564.jpg';
+import { logoBase64, bgImageBase64 } from '../assets/base64Images';
 
 interface Props {
   data: ContractData;
@@ -193,11 +192,11 @@ export const ContractPDF: React.FC<Props> = ({ data }) => {
     <Document>
       {/* COVER PAGE */}
       <Page size="A4" style={styles.coverPage}>
-        <Image src={bgImage} style={styles.coverBg} />
+        <Image src={bgImageBase64} style={styles.coverBg} />
         
         <View style={styles.coverContent}>
           <View style={styles.coverLogoBox}>
-            <Image src={logo} style={styles.coverLogo} />
+            <Image src={logoBase64} style={styles.coverLogo} />
           </View>
 
           <View style={{ flexGrow: 1 }} />
@@ -223,7 +222,7 @@ export const ContractPDF: React.FC<Props> = ({ data }) => {
         
         {/* HEADER */}
         <View style={styles.headerContainer} fixed>
-          <Image src={logo} style={styles.logo} />
+          <Image src={logoBase64} style={styles.logo} />
         </View>
 
         <Text style={styles.title}>Contrato de prestação de serviços</Text>

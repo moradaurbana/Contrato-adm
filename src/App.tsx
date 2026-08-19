@@ -7,7 +7,7 @@ import { ContractData, defaultContractData } from './types';
 import { SidebarForm } from './components/SidebarForm';
 import { ContractTemplate } from './components/ContractTemplate';
 import { ContractPDF } from './components/ContractPDF';
-import appIcon from './assets/icon_app_dark_1024.png';
+import { appIconBase64 } from './assets/base64Images';
 
 export default function App() {
   const [isGenerating, setIsGenerating] = useState(false);
@@ -55,7 +55,7 @@ export default function App() {
       {/* Header */}
       <header className="h-16 border-b border-white/5 bg-[#121212] flex items-center justify-between px-8 shrink-0 print:hidden">
         <div className="flex items-center space-x-3">
-          <img src={appIcon} alt="Logo" className="w-8 h-8 object-contain rounded" />
+          <img src={appIconBase64} alt="Logo" className="w-8 h-8 object-contain rounded" />
           <h1 className="text-lg font-medium tracking-tight text-white">Morada Urbana <span className="text-slate-500 font-light">| Gerador Pro</span></h1>
         </div>
         <div className="flex items-center space-x-6 text-sm font-medium">
