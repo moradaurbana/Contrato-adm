@@ -54,7 +54,7 @@ export default function App() {
       {/* Header */}
       <header className="h-16 border-b border-white/5 bg-[#121212] flex items-center justify-between px-8 shrink-0 print:hidden">
         <div className="flex items-center space-x-3">
-          <img src="/icon_app_dark_1024.png" alt="Logo" className="w-8 h-8 object-contain rounded" />
+          <img src={`${import.meta.env.BASE_URL}icon_app_dark_1024.png`} alt="Logo" className="w-8 h-8 object-contain rounded" />
           <h1 className="text-lg font-medium tracking-tight text-white">Morada Urbana <span className="text-slate-500 font-light">| Gerador Pro</span></h1>
         </div>
         <div className="flex items-center space-x-6 text-sm font-medium">
