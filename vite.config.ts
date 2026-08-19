@@ -6,6 +6,9 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     base: '/Contrato-adm/', // Caminho base exato do repositório no GitHub Pages
+    build: {
+      assetsInlineLimit: 2000000, // Força o Vite a embutir imagens (até 2MB) direto no código (Base64) para evitar erros de 404 no Github Pages e CORS no PDF
+    },
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
