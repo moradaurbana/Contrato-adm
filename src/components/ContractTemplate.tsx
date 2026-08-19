@@ -1,6 +1,6 @@
 import React from 'react';
 import { ContractData } from '../types';
-import logo from '../assets/logo.png';
+import logo from '../assets/logo_horizontal_color_transparent.png';
 import bgImage from '../assets/images/cover_bg_buildings_1787066453564.jpg';
 
 interface Props {
